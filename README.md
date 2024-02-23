@@ -54,7 +54,7 @@ if (e.KeyCode == Keys.Down)
 Damit der Spieler nicht seitwärts aus dem Bild läuft, habe ich statt wie im obrigen Text ein int, sondern die Koordinaten des Spielers benutzt.
 Wenn die X-Position vom Spieler kleiner als 0 ist, dann kann er nicht weiter nach links laufen.
 Wenn die -Position vom Spieler mehr ist als die vom Fenster, dann kann er nicht weiter nach rechts laufen.
-`csharp
+´csharp
 if (e.KeyCode == Keys.Left)
 {
     if (spieler.Left > 0)
