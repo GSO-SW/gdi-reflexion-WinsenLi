@@ -27,6 +27,16 @@ Mit FillEllipse zeichnen wir den Spieler.
 Wir haben eine Methode für, wenn Tasten gedrückt werden. 
 In der Methode checkt der welche Taste genau gedrückt wird.
 Wenn die genaue Taste ausgeführt wird addiert oder subtrahiert man die Position des Spielers
+```csharp
+if (e.KeyCode == Keys.Down)
+{
+    if (currentline != 0)
+    {
+        spieler.Y = spieler.Y + hoeheJeBereich;
+        currentline--;
+    }
+}
+```
 
 ### Verhindern, dass ein Spieler aus dem Bild läuft
 Um zu verhinder, dass der SPieler oberhalb oder unterhalbe des Spielfeld ist, benutzt man ein int currentline.
