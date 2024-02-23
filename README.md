@@ -41,6 +41,7 @@ Das gleiche auch für oben.
 wenn currentline != 4 (oberste Zeile im Spiel ist die fünfte Zeile), dann bewegt er sich nach oben.
 
 Hier ist der Code, wenn der Spieler sich nach unten bewegen soll:
+
 `csharp
 if (e.KeyCode == Keys.Down)
 {
@@ -54,7 +55,8 @@ if (e.KeyCode == Keys.Down)
 Damit der Spieler nicht seitwärts aus dem Bild läuft, habe ich statt wie im obrigen Text ein int, sondern die Koordinaten des Spielers benutzt.
 Wenn die X-Position vom Spieler kleiner als 0 ist, dann kann er nicht weiter nach links laufen.
 Wenn die -Position vom Spieler mehr ist als die vom Fenster, dann kann er nicht weiter nach rechts laufen.
-´csharp
+
+`csharp
 if (e.KeyCode == Keys.Left)
 {
     if (spieler.Left > 0)
@@ -63,7 +65,7 @@ if (e.KeyCode == Keys.Left)
 
     }
 }
-´
+`
 ### Spiel pausieren
 Da das ganze Spiel auf einer Tickrate spielt, können wir die Tickrate auf 0 stellen.
 Die alle Objekte brauchen einen Tick, um sich zu bewegen.
